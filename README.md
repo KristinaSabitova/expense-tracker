@@ -3,6 +3,9 @@
 Aplicación web sencilla para registrar y gestionar gastos personales.
 Permite añadir, eliminar y visualizar gastos guardados en el navegador usando localStorage.
 
+## 🚀 Demo
+https://kristinasabitova.github.io/expense-tracker/
+
 Proyecto pensado para practicar:
 	•	JavaScript moderno
 	•	Manipulación del DOM
