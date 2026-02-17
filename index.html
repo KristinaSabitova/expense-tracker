@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>💳 Expense Tracker</h1>
+
+  <div class="form">
+    <input id="nameInput" placeholder="Concepto">
+    <input id="amountInput" type="number" placeholder="Cantidad €">
+
+    <select id="categoryInput">
+      <option value="food">🍔 Comida</option>
+      <option value="transport">🚗 Transporte</option>
+      <option value="entertainment">🎬 Ocio</option>
+      <option value="shopping">🛍 Compras</option>
+      <option value="other">📦 Otros</option>
+    </select>
+
+    <button id="addBtn">Añadir gasto</button>
+  </div>
+
+  <select id="filter">
+    <option value="all">Todas las categorías</option>
+    <option value="food">Comida</option>
+    <option value="transport">Transporte</option>
+    <option value="entertainment">Ocio</option>
+    <option value="shopping">Compras</option>
+    <option value="other">Otros</option>
+  </select>
+
+  <ul id="expenseList"></ul>
+
+  <canvas id="chart" height="120"></canvas>
+
+  <div class="summary">
+    Hoy: <span id="todayTotal">0</span> € |
+    Mes: <span id="monthTotal">0</span> €
+  </div>
+
+  <div class="total">
+    Total: <span id="totalAmount">0</span> €
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
